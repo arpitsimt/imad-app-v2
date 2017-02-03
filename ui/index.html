@@ -1,23 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-        <title>hello</title>
-    </head>
-    <body>
-        <div class="center">
-            <img src="/ui/madi.png" class="img-medium"/>
-        </div>
-        <br>
-        <div class="center text-big bold">
-            Hi! this is my first web app.....
-        </div>
-        <form>
-            <h1 style="font-size:35px;font-weight:bold;"> first name=<br/></h1>
-            <input type="text" value="first name"/>
-            <button onclick="alert('you are trying to fill the form')">submit</button>
+        <title>Page Title</title>
+        <style type="text/css" media="all">
+        
+        h1{
+           
+           color:red;
+           
+            
+        }
+        body>p{
+           color:blue;
+            
+        }
+        input[type="text"]{
+           
+           color:green;
+            
+        }
+        table#tt,td,tr{
+           
+           border-style:solid;
+           border-color:black;
+           color:red;
+           border-collapse:collapse;
+            
+        }
+        #yu{
+           border-radius:20px;
+           background-color:blue;
+           width:5cm;
+           height:1cm;
+           padding:2px;
+           color:white;
+           
+           
+            
+        }
+        #y4u{
+           
+           
+           
+           border-radius:20px;
+           background-color:white;
+           width:5cm;
+           height:20pt;
+           padding:2px;
+           color:black;           
+           
+            
+        }
+        #pi{
+           display:block;
+           border-style:double;
+           border-color:black;
+           overflow:auto;
+           width:5cm;
+           height:1cm;
+           padding:10px;
+           background-color:blue;
+           color:red;
+           position:relative;
+           left:80px;
+           
+           
+           
+            
+        }
+        #iop{
+           
+           position:fixed;
+           left:80px;
+           top:2px;
+           
+            
+        }
+        h2 { animation-duration: 3s; animation-name: fadeoutleft;animation-iteration-count:3; }
+        @keyframes fadeoutleft{ 0% { transform: scale(0.1); opacity: 0; } 60% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(1); } }
+        </style>
+   <body style="background-color:rgba(200,50,30,0.4);"> 
+    
+    
+        <h1 id="iop"> heloooooooo</h1>
+        <h2>hello </h2>
+        <form style="position:relative;left:80px;">
+        
+        my name:<br />
+        <input id="y4u" type="text" value="my name"/>
+        <br />
+        number:<br />
+        <input id="y4u" type="number" value="quantity" min="0" max="100" step="2"/>
+        
+        <br />
+        date of birth<br />
+        <input id="y4u" type="date" value="dob" min="1957-01-01" max="1999-01-01"/><br /><br />
+        favourite color<br />
+        <input id="y4u" type="color" value="favcolor"/><br /><br />
+        select your age:<br />
+        <input id="y4u" type="range"  value="age" min="0"
+      max="60"  step="1"/><br />
+      <input id="y4u" type="datetime-local" value="brthg"/><br />
+      
+        <button id="yu"> submit </button>
         </form>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
-</html>
+    
